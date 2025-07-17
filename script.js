@@ -86,5 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Cor original restaurada!"); // Mensagem no console para confirmar que a cor foi restaurada
     });
 
+    // Modo escuro
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+        // Alterna a classe 'dark-mode' no corpo do documento
+        document.body.classList.toggle('dark-mode');
+        console.log("Modo escuro alternado!"); // Mensagem no console para confirmar que o modo escuro foi ativado/desativado
+    });
+
 
 });
